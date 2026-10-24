@@ -1,0 +1,96 @@
+/* header section */
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/jana2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header .header-caption h1{
+    font-size: 60px;
+}
+
+header .header-caption span{
+    font-size: 30px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* navbar section */
+
+.navbar .nav-item{
+    position: relative;
+}
+
+.navbar .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+
+}
+.navbar .nav-item:hover::after{
+    width: 90%;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* about section */
+
+section{
+    padding-top: 100px;
+}
+
+.list-unstyled span{
+    font-weight: bold;
+} 
+
+#about h2{
+    position: relative;
+}
+
+#about h2::after{
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 0;
+} 
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* services section */
+
+#services .card .circle{
+    width: 100px;
+    height: 100px;
+    border: 8px solid red ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 1s;
+}  
+
+ #services .card:hover .circle{
+    background-color: red;
+    color: #fff;
+    border: 8px solid rgb(211, 211, 214) ;
+}   
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
